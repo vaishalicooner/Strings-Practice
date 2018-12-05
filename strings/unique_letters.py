@@ -13,3 +13,19 @@ def unique(string):
 # result = unique("hello")
 result = unique("how")
 print(result)
+
+
+#----------or-------- without using a datastructure-------
+
+def is_unique(string):
+  compare = ""
+  
+  for letter in string:
+    if letter in compare:
+      return False
+    compare += letter
+  return True
+
+# result = is_unique("hello")
+result = is_unique("abc")
+print(result)
